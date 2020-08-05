@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="data:,">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.725.0.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+    <div class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand">Lambda AWS</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Parameters</h4>
+                    </div>
+                    <div class="card-body">
+                        <form class="mx-3">
+                            <div class="form-group">
+                                <label for="" class="form-label">Name:</label>
+                                <input id="txt_first_name" type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="form-label">Last name:</label>
+                                <input id="txt_last_name" type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <button id="btn_send" class="btn btn-success">Send to AWS Lambda</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Result from lambda</h4>
+                    </div>
+                    <div class="card-body">
+                        <h5 id="txt_result">😜 Please send your parameters</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./app.js"></script>
+</body>
+</html>
